@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — pm-rclone</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<header><a class="brand" href="index.html">pm-rclone</a><nav><a href="index.html">Home</a></nav></header>
+<main>
+<p class="eyebrow">Privacy policy</p>
+<h1>How this personal backup workflow handles data.</h1>
+<p class="lead">This policy describes the pm-rclone application and the owner's documented rclone backup workflow. Application owner: Timur Paskal. Last updated: 13 October 2026.</p>
+<section>
+<h2>Data and permissions</h2>
+<p>The workflow uses Google authorization to connect rclone to the owner's Google Drive. The application's OAuth configuration declares access to Google Drive files, their metadata and Google Docs documents. Google's consent screen shows the permissions requested during authorization.</p>
+<p>The configured permissions include the ability to see, edit, create and delete Drive files and Google Docs documents. They are broader than access to a single backup folder. This policy does not describe them as read-only or limited to files created by the application.</p>
+<p>The documented backup process handles selected local files, backup contents, file names, directory names, file sizes, integrity hashes, backup status and Drive storage quota information.</p>
+</section>
+<section>
+<h2>Purpose and processing</h2>
+<p>The backup utility uses this information to copy the owner's selected files to Drive, verify backup integrity, check available storage and support restoration. Backup selection and processing occur on owner-controlled computers using local configuration.</p>
+<p>The workflow stores the backup in the owner's Google Drive. Its local backup utility does not include a function to publicly share Drive files. This privacy policy covers that backup workflow, not unrelated uses of the owner's Google Account.</p>
+</section>
+<section>
+<h2>Storage and protection</h2>
+<p>Backup contents, file names and directory names are encrypted by rclone crypt before upload. The owner maintains the backup encryption credentials separately from the OAuth configuration. Those encryption credentials are needed to restore encrypted backups.</p>
+<p>OAuth credentials are handled by the owner's rclone configuration. Credential files are excluded from the documented automated backup selection. Local operational records are used to track backup status, integrity checks and processing results.</p>
+<p>Google operates the Drive storage service under its own terms and privacy policy. Encryption of backup contents does not remove Google's processing of service metadata, such as stored data sizes or account activity.</p>
+</section>
+<section>
+<h2>Retention, disconnection and deletion</h2>
+<p>The automated workflow retains earlier versions when mutable backup files are replaced and does not automatically delete Drive backups. Backup removal is controlled by the owner.</p>
+<p>The owner can stop the local backup process and remove the application's access through <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>. Removing authorization stops future authorized access; it does not itself delete files already stored in Drive or local copies.</p>
+</section>
+<section>
+<h2>These information pages</h2>
+<p>These pages contain no sign-in form, analytics script or application credential. The hosting provider may process ordinary connection data under its own privacy policy.</p>
+</section>
+<section class="contact">
+<h2>Questions or data requests</h2>
+<p>Contact the application owner at <a href="mailto:paskaltist@gmail.com">paskaltist@gmail.com</a> for questions about this workflow, access or backup removal.</p>
+</section>
+</main>
+<footer><a href="index.html">pm-rclone home</a> · Personal backup workflow</footer>
+</body>
+</html>
