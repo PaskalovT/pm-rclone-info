@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pm-rclone — personal backup utility</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<header><a class="brand" href="index.html">pm-rclone</a><nav><a href="privacy.html">Privacy policy</a></nav></header>
+<main>
+<p class="eyebrow">Personal backup utility</p>
+<h1>A private backup workflow using Google Drive.</h1>
+<p class="lead">pm-rclone is the Google OAuth application used by Timur Paskal for a personal rclone backup workflow. It connects an owner-controlled rclone installation to the owner's Google Drive.</p>
+<section>
+<h2>What it does</h2>
+<p>The workflow copies selected local project files to Google Drive, checks backup integrity and supports restoring those files. The backup utility uses rclone crypt to encrypt backup contents, file names and directory names before storing them in Drive.</p>
+<p>The automated workflow checks files before copying them, excludes credential files and keeps previous versions when mutable backup files are replaced. It does not automatically delete Drive backups.</p>
+</section>
+<section>
+<h2>Google Account access</h2>
+<p>Google authorization is completed on Google's own consent screen. The OAuth configuration currently declares permissions to read and manage Google Drive files, read Drive file metadata, and read and manage Google Docs documents.</p>
+<p>These are broad permissions. They are not technically restricted to a single backup folder. The actual requested permissions are shown by Google when the owner authorizes the application.</p>
+<p>pm-rclone is intended for the owner's personal backup use. This page is an explanation of the application; it is not a public backup service or a registration page.</p>
+</section>
+<section class="contact">
+<h2>Contact</h2>
+<p>Application owner: Timur Paskal<br>Support: <a href="mailto:paskaltist@gmail.com">paskaltist@gmail.com</a></p>
+<p><a href="privacy.html">Read the privacy policy →</a></p>
+</section>
+</main>
+<footer>pm-rclone · Personal backup workflow</footer>
+</body>
+</html>
